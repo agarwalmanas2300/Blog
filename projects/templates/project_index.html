@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block body %}
-<h1>Projects</h1>
+<h1 style="color: #010141 ; font-family: Times New Roman, Times, serif ; font-size: 40px; margin-left: 18px ; margin-top: 7px ; margin-bottom: 8px; text-align: center"><b>Types of Blogs</h1>
 <div class="row">
 {% for project in projects %}
-    <div class="col-md-4">
-        <div class="card mb-2">
-            <img class="card-img-top" src="https://source.unsplash.com/1600x900/?nature,water">
+    <div class="col-lg-3" style="margin-left: 95px">
+        <div class="card md-3">
+            <img class="card-img-top" height="400px" src="https://media3.giphy.com/media/inlGp1wGqBog2cVw5y/giphy.gif">
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
                 <p class="card-text">{{ project.description }}</p>

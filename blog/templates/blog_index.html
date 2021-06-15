@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block body %}
 <div class="col-md-8 offset-md-2">
-    <h1>Blog Index</h1>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <h1 style= "background-color:rgb(26, 26, 59); padding: 10px ; font-family: Sofia, sans-serif; color: rgb(255, 255, 255);margin-top:20px">Blog Content</h1>
     <hr>
     {% for post in posts %}
     <h2><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h2>
